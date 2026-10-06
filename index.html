@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AWD.WIN - private software development tools for Roblox developers.">
+    <title>AWD.WIN — Roblox Development Tools</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #e8e8e8;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(100% - 40px, 1050px);
+            margin: auto;
+        }
+
+        header {
+            height: 72px;
+            border-bottom: 1px solid #202020;
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #777;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        .hero {
+            padding: 125px 0 110px;
+            text-align: center;
+            border-bottom: 1px solid #202020;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 10px;
+            margin-bottom: 22px;
+            border: 1px solid #292929;
+            background: #151515;
+            color: #999;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1;
+            letter-spacing: -3px;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #999;
+            font-size: 17px;
+        }
+
+        .section {
+            padding: 90px 0;
+            border-bottom: 1px solid #202020;
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .about {
+            max-width: 760px;
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        .about p + p {
+            margin-top: 18px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .feature {
+            border: 1px solid #222;
+            background: #111;
+            padding: 28px;
+        }
+
+        .feature h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .access {
+            border: 1px solid #242424;
+            background: #111;
+            padding: 30px;
+            max-width: 760px;
+        }
+
+        .access strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .access p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            border: 1px solid #242424;
+            background: #111;
+            padding: 30px;
+        }
+
+        .contact p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            border: 1px solid #333;
+            padding: 10px 18px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        footer {
+            padding: 35px 0;
+            color: #555;
+            font-size: 13px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: min(100% - 28px, 1050px);
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 90px 0 80px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .contact,
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo">AWD<span>.WIN</span></a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#access">Access</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge">Private Software</div>
+
+            <h1>AWD.WIN</h1>
+
+            <p>
+                Private software development tools designed for Roblox developers
+                and authorized users.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About</h2>
+                <p>What AWD.WIN is</p>
+            </div>
+
+            <div class="about">
+                <p>
+                    AWD.WIN is a private software product focused on supporting
+                    Roblox development workflows.
+                </p>
+
+                <p>
+                    The product is distributed privately and access is limited
+                    to a controlled number of authorized users.
+                </p>
+
+                <p>
+                    AWD.WIN does not inject code into games, modify Roblox game
+                    files, or provide gameplay advantages such as aimbots or
+                    wallhacks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Features</h2>
+                <p>Designed for development workflows</p>
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>Development Tools</h3>
+                    <p>
+                        Tools intended to assist developers during Roblox
+                        development and testing workflows.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Private Access</h3>
+                    <p>
+                        Access is restricted to a limited number of authorized
+                        users.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Developer Focused</h3>
+                    <p>
+                        Built around software development and testing rather
+                        than providing gameplay advantages.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="access">
+        <div class="container">
+            <div class="section-title">
+                <h2>Access</h2>
+                <p>Private distribution</p>
+            </div>
+
+            <div class="access">
+                <strong>Limited availability</strong>
+
+                <p>
+                    AWD.WIN is not publicly distributed. Access is provided
+                    directly to approved users and may be limited depending
+                    on availability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Official AWD.WIN information</p>
+            </div>
+
+            <div class="contact">
+                <div>
+                    <strong>AWD.WIN</strong>
+                    <p>
+                        For product and access inquiries, contact the AWD.WIN
+                        team through the official support channel.
+                    </p>
+                </div>
+
+                <a class="button" href="mailto:seven911@gmail.com">
+                    Contact Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div>© 2026 AWD.WIN</div>
+            <div>Private Roblox Development Software</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
